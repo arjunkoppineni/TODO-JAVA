@@ -10,7 +10,7 @@ phases:
       - ACCOUNT_ID=216989142685
       - REGION=us-east-1
       - REPO_NAME=harish
-      - IMAGE_TAG=latest
+      - IMAGE_TAG=todo
       - aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
 
   build:
